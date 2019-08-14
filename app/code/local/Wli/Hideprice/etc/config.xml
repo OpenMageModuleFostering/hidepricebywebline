@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Wli_Hideprice>
+            <version>0.1.0</version>
+        </Wli_Hideprice>
+    </modules>
+	<frontend>
+        <routers>
+            <hideprice>
+                <use>standard</use>
+                <args>
+                    <module>Wli_Hideprice</module>
+                    <frontName>hideprice</frontName>
+                </args>
+            </hideprice>
+        </routers>
+        <layout>
+            <updates>
+                <hideprice>
+                    <file>hideprice.xml</file>
+                </hideprice>
+            </updates>
+        </layout>
+    </frontend>
+    <global>
+        <models>
+            <wli_hideprice>
+                <class>Wli_Hideprice_Model</class>
+            </wli_hideprice>
+        </models>
+    </global>
+    <default>
+        <tab1>
+            <general>
+                <text_field>Default value</text_field>
+                <textarea></textarea>
+                <dropdown>key2</dropdown>
+                <multiple_dropdown>key1,key2</multiple_dropdown>
+                <time>11,30,45</time>
+                <active>0</active>
+                <boolean>1</boolean>
+                <dependant_text_field>Default value</dependant_text_field>
+            </general>
+        </tab1>
+    </default>
+</config>

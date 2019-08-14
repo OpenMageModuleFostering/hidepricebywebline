@@ -1,0 +1,16 @@
+{
+    "name": "OpenMageModuleFostering/hidepricebywebline",
+    "type": "magento-module",
+    "license": "GNU",
+    "homepage": "",
+    "description": "Hideprice by webline stable version release",
+    "authors": [
+    {
+        "name": "Atul Mehta",
+        "email": "partners@weblineindia.com"
+    }
+],
+    "suggest": {
+        "magento-hackathon/magento-composer-installer": "*"
+    }
+}

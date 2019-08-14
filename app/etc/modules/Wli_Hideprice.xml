@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+	<modules>
+		<Wli_Hideprice>
+			<active>true</active>
+			<codePool>local</codePool>
+		</Wli_Hideprice>
+	</modules>
+</config>

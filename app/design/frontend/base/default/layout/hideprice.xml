@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+ <layout version="0.1.0">
+<!-- Blocks for hiding the price of the product from the end user starts -->
+	<default>
+        <reference name="catalog_product_price_template">
+            <action method="addPriceBlockType"><type>simple</type><block>catalog/product_price</block><template>hideprice/catalog/product/price.phtml</template></action>
+            <action method="addPriceBlockType"><type>configurable</type><block>catalog/product_price</block><template>hideprice/catalog/product/price.phtml</template></action>
+            <action method="addPriceBlockType"><type>grouped</type><block>catalog/product_price</block><template>hideprice/catalog/product/price.phtml</template></action>
+            <action method="addPriceBlockType"><type>virtual</type><block>catalog/product_price</block><template>hideprice/catalog/product/price.phtml</template></action>
+            <action method="addPriceBlockType"><type>bundled</type><block>catalog/product_price</block><template>hideprice/catalog/product/price.phtml</template></action>
+        </reference>
+	</default>
+<!-- Blocks for hiding the price of the product from the end user ends -->	
+
+<!-- Block for hiding the add to cart button from the grid starts -->
+	<catalog_category_default>
+	 <reference name="product_list">
+			<action method="setTemplate">               
+			   <template>hideprice/catalog/product/list.phtml</template>
+            </action>
+	 </reference>
+	</catalog_category_default>
+<!-- Block for hiding the add to cart button from the grid ends -->
+
+<!-- Block for hiding the add to cart button rom the Compare Product Popup starts -->
+	<catalog_product_compare_index>
+	 <reference name="catalog.compare.list">
+			<action method="setTemplate">               
+			   <template>hideprice/catalog/product/compare/list.phtml</template>
+            </action>
+	 </reference>
+	</catalog_product_compare_index>
+<!-- Block for hiding the add to cart button from the Compare Product Popup ends -->
+
+<!-- Block for hiding the add to cart button from the view page of the product start -->
+	<catalog_product_view>
+		<reference name="product.info">
+			<block type="catalog/product_view" name="product.info.addtocart" as="addtocart" template="hideprice/catalog/product/view/addtocart.phtml"/>
+        </reference>
+    </catalog_product_view>
+<!-- Block for hiding the add to cart button from the view page of the product ends -->
+
+<catalog_product_compare_index>
+</catalog_product_compare_index>
+</layout>
+
